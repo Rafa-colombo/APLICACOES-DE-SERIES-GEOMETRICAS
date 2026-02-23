@@ -19,11 +19,7 @@ A estrutura do código e a física desenvolvida formam uma base sólida para dem
 * **Resistência do Ar (Arrasto):** A simulação não ocorre no vácuo perfeito. O sistema calcula o arrasto atmosférico atuando na esfera utilizando a formulação de Stokes, onde o coeficiente de Stokes é definido por `b = 6πηr` *(sendo `η` a viscosidade do ar e `r` o raio da bola).*
 * **Renderização 3D em Tempo Real:** Utiliza a biblioteca `vpython` para desenhar o ambiente, a trajetória parabólica com rastro e a colisão no solo, ajustando o centro da câmera dinamicamente.
 
-### 🎛️ Entendendo o Painel de Controle
-
-A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação.
-
-### 🎛️ Entendendo o Painel de Controle
+## 🎛️ Entendendo o Painel de Controle
 
 A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação.
 
@@ -56,9 +52,22 @@ A interface gráfica foi desenhada para dar controle total sobre as variáveis f
   </tr>
 </table>
 
-### 📊 Análise Matemática e Relatórios
+## 📊 Análise Matemática e Relatórios
 
-![Gráficos de Decaimento Exponencial e Tabela de Dados](assets/grafico_exp.png)
+<table border="0">
+  <tr>
+    <td width="50%" valign="top">
+      <img src="assets/grafico_altura.png" alt="Gráfico de Altura vs Quiques" width="100%">
+      <br>
+      <em align="center">Fig 2. Decaimento da Altura</em>
+    </td>
+    <td width="50%" valign="top">
+      <img src="assets/grafico_distancia.png" alt="Gráfico de Distância vs Quiques" width="100%">
+      <br>
+      <em align="center">Fig 3. Decaimento da Distância</em>
+    </td>
+  </tr>
+</table>
 
 * **Geração de Gráficos Analíticos:** Plota instantaneamente o decaimento exponencial da altura e da distância horizontal a cada quique, demonstrando visualmente o comportamento da Série Geométrica.
 * **Interface de Relatórios Integrada:** Utiliza `tkinter` para gerar uma tabela de dados (Dataframe) com o resumo da simulação, calculando a razão analítica entre as alturas dos quiques sucessivos para validar o coeficiente de restituição: `e = √(h_n / h_{n-1})`.
