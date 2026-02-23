@@ -94,11 +94,3 @@ Não se preocupe, é possível rodar a versão portátil sem precisar instalar n
 
 ## 👨‍💻 Contato e Contribuições
 Sinta-se à vontade para explorar o código, abrir *issues* para tirar dúvidas ou enviar *pull requests* com melhorias para o algoritmo!
-
-
-        <li><b>Botão "Iniciar Simulação":</b> Abre a janela 3D do <code>vpython</code> e inicia a renderização.</li>
-        <li><b>Botão "Print":</b> Imprime os dados brutos (gravidade, massa, Stokes b) na caixa de resultados sem rodar o visual.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
