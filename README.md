@@ -10,11 +10,11 @@ Este é um projeto interdisciplinar que une **Cálculo 3, Estatística e Física
 A estrutura do código e a física desenvolvida formam uma base sólida para demonstrações de séries geométricas e servem de excelente material de apoio para apresentações em eventos acadêmicos de ciência e tecnologia, como o COBICET.
 
 ### 🎮 Demonstração da Simulação
-![Simulação da bolinha quicando no ambiente 3D](assets/seu_gif_aqui.gif)
+![Simulação da bolinha quicando no ambiente 3D](assets/Animação.gif)
 
 ## ✨ Funcionalidades e Motor Físico
 
-![Painel de Controle de Variáveis](assets/sua_foto_interface_aqui.png)
+![Painel de Controle de Variáveis](assets/Captura de tela 2026-02-23 110139.png)
 
 * **Múltiplos Ambientes Gravitacionais:** Escolha entre 5 corpos celestes (Terra, Marte, Júpiter, Vênus e Lua), cada um com sua gravidade específica e uma identidade visual 3D própria na simulação.
 * **Física de Materiais:** O simulador possui um banco de dados com a densidade e o coeficiente de restituição de 8 materiais diferentes (Borracha, PVC, Madeira, Gelo, Cimento, Ferro, Aço e Ósmio), permitindo o cálculo dinâmico da massa e do comportamento do impacto.
