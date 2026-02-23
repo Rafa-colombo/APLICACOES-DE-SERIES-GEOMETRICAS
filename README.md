@@ -23,6 +23,10 @@ A estrutura do código e a física desenvolvida formam uma base sólida para dem
 
 A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação.
 
+### 🎛️ Entendendo o Painel de Controle
+
+A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação.
+
 <table>
   <tr>
     <td width="40%" valign="top">
@@ -44,20 +48,14 @@ A interface gráfica foi desenhada para dar controle total sobre as variáveis f
             <li><i>Desmarcado:</i> Usa o valor digitado manualmente no primeiro campo.</li>
           </ul>
         </li>
+        <li><b>Botão "Iniciar Simulação":</b> Abre a janela 3D do <code>vpython</code> e inicia a renderização.</li>
+        <li><b>Botão "Print":</b> Imprime os dados brutos (gravidade, massa, Stokes b) na caixa de resultados sem rodar o visual.</li>
+        <li><b>Resultados (Caixa de Texto):** Área onde o programa exibe os relatórios finais após a simulação, incluindo a soma geométrica das alturas, número de quiques e validações de erro.</b>li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação. Abaixo, explicamos a função de cada elemento:
-
-* **Razão da Progressão Geométrica (0 a 1):** Define manualmente a taxa de perda de energia da bolinha a cada quique (coeficiente de restituição). Só é ativado se a caixa de seleção abaixo estiver desmarcada.
-* **Altura Inicial (m):** Posição no eixo Y de onde a bolinha será solta. Se definido como `0`, o lançamento inicia do solo.
-* **v0 (Velocidade de lançamento - m/s):** A força inicial do disparo. O algoritmo projeta essa velocidade em um ângulo de 45º para iniciar o movimento parabólico.
-* **Planeta:** Permite escolher entre 5 corpos celestes (Terra, Marte, Júpiter, Vênus e Lua). Essa escolha altera automaticamente o valor da gravidade ($g$) aplicada na física do ambiente e muda a cor de fundo da simulação 3D.
-* **Material:** Define do que a bolinha é feita (Borracha, Madeira, Aço, etc.). Essa escolha altera a densidade da esfera (impactando o cálculo de massa e arrasto do ar) e carrega um coeficiente de restituição real para aquele material.
-* **☑️ Usar coeficiente do material:** * **Marcado:** Ignora o valor digitado no primeiro campo e utiliza o coeficiente de restituição real associado ao material escolhido (ex: Borracha = 0.925).
-  * **Desmarcado:** Permite que você force um coeficiente de restituição personalizado digitando no primeiro campo, útil para testar progressões geométricas teóricas.
-* **Botão "Iniciar Simulação":** Abre a janela 3D do `vpython` e inicia a renderização da física com os parâmetros informados.
-* **Botão "Print":** Uma função rápida de relatório. Em vez de rodar a simulação visual, ele apenas calcula e imprime na caixa de resultados os dados brutos como gravidade, massa da bolinha, densidade e o coeficiente de arrasto de Stokes (b).
-* **Resultados (Caixa de Texto):** Área onde o programa exibe os relatórios finais após a simulação, incluindo a soma geométrica das alturas, número de quiques e validações de erro.
-* 
 ### 📊 Análise Matemática e Relatórios
 
 ![Gráficos de Decaimento Exponencial e Tabela de Dados](assets/grafico_exp.png)
