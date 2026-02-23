@@ -46,7 +46,7 @@ A interface gráfica foi desenhada para dar controle total sobre as variáveis f
         </li>
         <li><b>Botão "Iniciar Simulação":</b> Abre a janela 3D do <code>vpython</code> e inicia a renderização.</li>
         <li><b>Botão "Print":</b> Imprime os dados brutos (gravidade, massa, Stokes b) na caixa de resultados sem rodar o visual.</li>
-        <li><b>Resultados (Caixa de Texto):</b> Área onde o programa exibe os relatórios finais após a simulação, incluindo a soma geométrica das alturas, número de quiques e validações de erro.</b>li>
+        <li><b>Resultados (Caixa de Texto):</b> Área onde o programa exibe os relatórios finais após a simulação, incluindo a soma geométrica das alturas, número de quiques e validações de erro.</li>
       </ul>
     </td>
   </tr>
