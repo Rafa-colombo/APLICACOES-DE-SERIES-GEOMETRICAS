@@ -14,7 +14,7 @@ A estrutura do código e a física desenvolvida formam uma base sólida para dem
 
 ## ✨ Funcionalidades e Motor Físico
 
-![Painel de Controle de Variáveis](assets/Captura de tela 2026-02-23 110139.png)
+![Painel de Controle de Variáveis](assets/interface_teste.png)
 
 * **Múltiplos Ambientes Gravitacionais:** Escolha entre 5 corpos celestes (Terra, Marte, Júpiter, Vênus e Lua), cada um com sua gravidade específica e uma identidade visual 3D própria na simulação.
 * **Física de Materiais:** O simulador possui um banco de dados com a densidade e o coeficiente de restituição de 8 materiais diferentes (Borracha, PVC, Madeira, Gelo, Cimento, Ferro, Aço e Ósmio), permitindo o cálculo dinâmico da massa e do comportamento do impacto.
@@ -38,7 +38,7 @@ A interface gráfica foi desenhada para dar controle total sobre as variáveis f
 * 
 ### 📊 Análise Matemática e Relatórios
 
-![Gráficos de Decaimento Exponencial e Tabela de Dados](assets/sua_foto_graficos_aqui.png)
+![Gráficos de Decaimento Exponencial e Tabela de Dados](assets/grafico_exp.png)
 
 * **Geração de Gráficos Analíticos:** Plota instantaneamente o decaimento exponencial da altura e da distância horizontal a cada quique, demonstrando visualmente o comportamento da Série Geométrica.
 * **Interface de Relatórios Integrada:** Utiliza `tkinter` para gerar uma tabela de dados (Dataframe) com o resumo da simulação, calculando a razão analítica entre as alturas dos quiques sucessivos para validar o coeficiente de restituição: `e = √(h_n / h_{n-1})`.
