@@ -14,14 +14,36 @@ A estrutura do código e a física desenvolvida formam uma base sólida para dem
 
 ## ✨ Funcionalidades e Motor Físico
 
-![Painel de Controle de Variáveis](assets/interface_teste.png)
-
 * **Múltiplos Ambientes Gravitacionais:** Escolha entre 5 corpos celestes (Terra, Marte, Júpiter, Vênus e Lua), cada um com sua gravidade específica e uma identidade visual 3D própria na simulação.
 * **Física de Materiais:** O simulador possui um banco de dados com a densidade e o coeficiente de restituição de 8 materiais diferentes (Borracha, PVC, Madeira, Gelo, Cimento, Ferro, Aço e Ósmio), permitindo o cálculo dinâmico da massa e do comportamento do impacto.
 * **Resistência do Ar (Arrasto):** A simulação não ocorre no vácuo perfeito. O sistema calcula o arrasto atmosférico atuando na esfera utilizando a formulação de Stokes, onde o coeficiente de Stokes é definido por `b = 6πηr` *(sendo `η` a viscosidade do ar e `r` o raio da bola).*
 * **Renderização 3D em Tempo Real:** Utiliza a biblioteca `vpython` para desenhar o ambiente, a trajetória parabólica com rastro e a colisão no solo, ajustando o centro da câmera dinamicamente.
 
 ### 🎛️ Entendendo o Painel de Controle
+
+A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação.
+
+<table>
+  <tr>
+    <td width="40%" valign="top">
+      <br>
+      <img src="assets/interface_teste.png" alt="Painel de Controle Tkinter" width="100%">
+      <br>
+      <em>Figura 1: Visão geral dos parâmetros de entrada.</em>
+    </td>
+    <td width="60%" valign="top">
+      <ul>
+        <li><b>Razão da Progressão Geométrica (0 a 1):</b> Define manualmente a taxa de perda de energia da bolinha a cada quique. Só ativa se a caixa de seleção abaixo estiver desmarcada.</li>
+        <li><b>Altura Inicial (m):</b> Posição no eixo Y de onde a bolinha será solta. Se <code>0</code>, inicia do solo.</li>
+        <li><b>v0 (Velocidade - m/s):</b> A força inicial do disparo (projetada em 45º).</li>
+        <li><b>Planeta:</b> Escolhe o corpo celeste, alterando a gravidade (<i>g</i>) e a cor de fundo da simulação 3D.</li>
+        <li><b>Material:</b> Define a substância da bolinha, alterando a densidade (massa/arrasto) e carregando um coeficiente de restituição real.</li>
+        <li><b>☑️ Usar coeficiente do material:</b>
+          <ul>
+            <li><i>Marcado:</i> Usa o coeficiente real do material (ex: Borracha = 0.925).</li>
+            <li><i>Desmarcado:</i> Usa o valor digitado manualmente no primeiro campo.</li>
+          </ul>
+        </li>
 
 A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação. Abaixo, explicamos a função de cada elemento:
 
@@ -63,31 +85,7 @@ Não se preocupe, é possível rodar a versão portátil sem precisar instalar n
 ## 👨‍💻 Contato e Contribuições
 Sinta-se à vontade para explorar o código, abrir *issues* para tirar dúvidas ou enviar *pull requests* com melhorias para o algoritmo!
 
-### 🎛️ Entendendo o Painel de Controle
 
-A interface gráfica foi desenhada para dar controle total sobre as variáveis físicas da simulação.
-
-<table>
-  <tr>
-    <td width="40%" valign="top">
-      <br>
-      <img src="assets/sua_foto_interface_aqui.png" alt="Painel de Controle Tkinter" width="100%">
-      <br>
-      <em>Figura 1: Visão geral dos parâmetros de entrada.</em>
-    </td>
-    <td width="60%" valign="top">
-      <ul>
-        <li><b>Razão da Progressão Geométrica (0 a 1):</b> Define manualmente a taxa de perda de energia da bolinha a cada quique. Só ativa se a caixa de seleção abaixo estiver desmarcada.</li>
-        <li><b>Altura Inicial (m):</b> Posição no eixo Y de onde a bolinha será solta. Se <code>0</code>, inicia do solo.</li>
-        <li><b>v0 (Velocidade - m/s):</b> A força inicial do disparo (projetada em 45º).</li>
-        <li><b>Planeta:</b> Escolhe o corpo celeste, alterando a gravidade (<i>g</i>) e a cor de fundo da simulação 3D.</li>
-        <li><b>Material:</b> Define a substância da bolinha, alterando a densidade (massa/arrasto) e carregando um coeficiente de restituição real.</li>
-        <li><b>☑️ Usar coeficiente do material:</b>
-          <ul>
-            <li><i>Marcado:</i> Usa o coeficiente real do material (ex: Borracha = 0.925).</li>
-            <li><i>Desmarcado:</i> Usa o valor digitado manualmente no primeiro campo.</li>
-          </ul>
-        </li>
         <li><b>Botão "Iniciar Simulação":</b> Abre a janela 3D do <code>vpython</code> e inicia a renderização.</li>
         <li><b>Botão "Print":</b> Imprime os dados brutos (gravidade, massa, Stokes b) na caixa de resultados sem rodar o visual.</li>
       </ul>
