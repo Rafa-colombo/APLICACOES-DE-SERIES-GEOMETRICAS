@@ -71,7 +71,7 @@ A interface gráfica foi desenhada para dar controle total sobre as variáveis f
 
 * **Geração de Gráficos Analíticos:** Plota instantaneamente o decaimento exponencial da altura e da distância horizontal a cada quique, demonstrando visualmente o comportamento da Série Geométrica.
 
-  ![Gráficos de Decaimento Exponencial e Tabela de Dados](assets/tabela_teste.png)
+  ![Tabela de Dados](assets/tabela_quiques.png)
   
 * **Interface de Relatórios Integrada:** Utiliza `tkinter` para gerar uma tabela de dados (Dataframe) com o resumo da simulação, calculando a razão analítica entre as alturas dos quiques sucessivos para validar o coeficiente de restituição: `e = √(h_n / h_{n-1})`.
 
