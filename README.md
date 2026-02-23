@@ -1,6 +1,6 @@
 # 🏀 Aplicações de Séries Geométricas: Simulação 3D em Python
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Python](https://img.shields.io/badge/Python-3.11.0-blue?style=for-the-badge&logo=python)
 ![Física](https://img.shields.io/badge/Física-Cinemática-orange?style=for-the-badge)
 ![Matemática](https://img.shields.io/badge/Matemática-Cálculo%203-green?style=for-the-badge)
 
