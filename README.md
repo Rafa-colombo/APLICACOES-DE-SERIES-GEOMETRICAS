@@ -87,7 +87,7 @@ Preparamos duas formas de rodar o projeto, garantindo acessibilidade para todos 
 
 ### Opção 2: Caso você NÃO tenha o Python instalado ⚙️
 Não se preocupe, é possível rodar a versão portátil sem precisar instalar nada:
-1. Acesse o nosso [Drive do Projeto](https://drive.google.com/drive/u/1/folders/1hrkQ6KT9Tzk2gR-ZWeA1-NuMl6duYgnH).
+1. Acesse o nosso [Drive do Projeto]([https://drive.google.com/drive/u/1/folders/1hrkQ6KT9Tzk2gR-ZWeA1-NuMl6duYgnH](https://drive.google.com/file/d/1VjmPFqu_HosyFvEXrreGl7brmT3AtsYC/view?usp=sharing)).
 2. Baixe e extraia a pasta `exe_vLeve.zip` para dentro do diretório deste projeto.
 3. Dê dois cliques no arquivo `start.bat`.
 4. O programa será executado utilizando o interpretador Python portátil que acompanha os arquivos extraídos.
